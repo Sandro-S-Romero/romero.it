@@ -3,122 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicio Técnico Romero</title>
+  <title>Romero IT | Servicio Técnico</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      background-color: #003366;
-      color: white;
+      background-color: #111;
       padding: 20px;
       text-align: center;
+    }
+    header h1 {
+      color: #39ff14;
+      margin: 0;
+    }
+    header p {
+      color: #ccc;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: #39ff14;
+      text-decoration: none;
     }
     section {
       padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
     h2 {
-      color: #003366;
+      color: #39ff14;
     }
-    .combo, .promo {
-      background-color: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    footer {
-      background-color: #003366;
+    ul li::before {
+      content: "✔️ ";
+      color: #39ff14;
+    }
+    a.whatsapp {
+      display: inline-block;
+      background-color: #25D366;
       color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    a {
-      color: #ffcc00;
+      padding: 10px 20px;
+      border-radius: 5px;
       text-decoration: none;
+    }
+    .banner {
+      height: 200px;
+      background-color: #333;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Servicio Técnico Romero</h1>
-    <p>Reparación y mantenimiento de PCs y Notebooks</p>
+    <h1>Romero IT</h1>
+    <p>Servicio técnico profesional a cargo de Sandro Sebastián Romero</p>
   </header>
+  
+  <nav>
+    <a href="#quien-soy">Quién soy</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#promociones">Promociones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <section>
-    <h2>💻 Servicios para PC de Escritorio</h2>
+  <div class="banner">
+    <!-- Acá podés agregar una imagen de encabezado/banner -->
+    <p>[Tu imagen de encabezado aquí]</p>
+  </div>
+
+  <section id="quien-soy">
+    <h2>Quién soy</h2>
+    <p>Mi nombre es <strong>Sandro Sebastián Romero</strong>, soy técnico informático con años de experiencia en reparación y mantenimiento de computadoras y notebooks. Trabajo de forma independiente bajo el nombre <strong>Romero IT</strong>, ofreciendo soluciones confiables, honestas y personalizadas para cada cliente.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <h3>🖥️ PC de escritorio</h3>
     <ul>
-      <li>Instalación de Windows</li>
+      <li>Instalación de Windows y drivers</li>
       <li>Instalación de Office y programas básicos</li>
-      <li>Limpieza y mantenimiento interno</li>
+      <li>Mantenimiento, limpieza interna y externa</li>
       <li>Clonado y cambio de disco duro</li>
-      <li>Formateo con backup (opcional)</li>
     </ul>
-
-    <div class="combo">
-      <strong>🔹 Combo PC Inicial</strong><br>
-      Windows + Office + Programas básicos – <em>$[precio]</em>
-    </div>
-    <div class="combo">
-      <strong>🔹 Combo PC Full Mantenimiento</strong><br>
-      Limpieza completa + instalación de software – <em>$[precio]</em>
-    </div>
-  </section>
-
-  <section>
-    <h2>💼 Servicios para Notebooks</h2>
+    
+    <h3>💻 Notebooks</h3>
     <ul>
-      <li>Instalación de Windows y Office</li>
-      <li>Limpieza interna y cambio de pasta térmica</li>
-      <li>Clonado de disco y cambio a SSD</li>
-      <li>Desbloqueo de netbooks educativas</li>
       <li>Reparación de bisagras</li>
+      <li>Desbloqueo de netbooks escolares</li>
+      <li>Optimización de rendimiento</li>
+      <li>Instalación de programas y actualizaciones</li>
     </ul>
-
-    <div class="combo">
-      <strong>🔹 Combo Notebook Optimizada</strong><br>
-      Limpieza interna + pasta térmica – <em>$[precio]</em>
-    </div>
-    <div class="combo">
-      <strong>🔹 Combo Aceleración Total</strong><br>
-      SSD + instalación limpia – <em>$[precio]</em>
-    </div>
-    <div class="combo">
-      <strong>🔹 Combo Reparación Express</strong><br>
-      Bisagras + revisión general – <em>$[precio]</em>
-    </div>
   </section>
 
-  <section>
-    <h2>🎁 Promociones</h2>
-    <div class="promo">
-      ✅ 2 equipos = 20% OFF en el segundo<br>
-      ✅ Descuento para estudiantes y jubilados<br>
-      ✅ SSD + instalación por solo <em>$[precio promo]</em>
-    </div>
+  <section id="promociones">
+    <h2>Promociones</h2>
+    <p><strong>Combo mantenimiento completo:</strong> Limpieza + formateo + programas básicos – ¡A precio promocional!</p>
+    <p><strong>Descuento especial</strong> para estudiantes y jubilados.</p>
   </section>
 
-  <section>
-    <h2>📍 Zona de Atención</h2>
-    <p>Atención en <strong>[tu zona]</strong>. Servicio a domicilio o retiro sin cargo.</p>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Corrientes Capital, Argentina</p>
+    <p>📞 WhatsApp: <a class="whatsapp" href="https://wa.me/5493794671403" target="_blank">Chatear por WhatsApp</a></p>
+    <p>📧 Email: tecnicoromero@gmail.com</p>
   </section>
-
-  <section>
-    <h2>📲 Contacto</h2>
-    <p>
-      WhatsApp: <a href="https://wa.me/54XXXXXXXXXX">+54 XXXXXXXXXX</a><br>
-      Facebook: <a href="https://facebook.com/tuPerfil" target="_blank">facebook.com/tuPerfil</a><br>
-      Instagram: <a href="https://instagram.com/tuPerfil" target="_blank">@tuPerfil</a><br>
-      Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Servicio Técnico Romero. Todos los derechos reservados.</p>
-  </footer>
 </body>
 </html>
+
