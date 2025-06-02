@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacto | Romero IT</title>
   <style>
     body {
-      background-color: #000;
+      background: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      padding: 20px;
+      margin: 0;
     }
-    h2 {
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
       color: #39ff14;
-    }
-    a {
-      color: #fff;
       text-decoration: none;
     }
-    .whatsapp {
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    a.whatsapp {
       display: inline-block;
       background-color: #25D366;
       color: white;
@@ -28,10 +38,19 @@
   </style>
 </head>
 <body>
-  <a href="index.html">← Volver al inicio</a>
-  <h2>Contacto</h2>
-  <p>📍 Corrientes Capital, Argentina</p>
-  <p>📞 WhatsApp: <a class="whatsapp" href="https://wa.me/5493794671403" target="_blank">Chatear por WhatsApp</a></p>
-  <p>📧 Email: tecnicoromero@gmail.com</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quien-soy.html">Quién soy</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="promociones.html">Promociones</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>📍 Corrientes Capital, Argentina</p>
+    <p>📞 WhatsApp: <a class="whatsapp" href="https://wa.me/5493794671403" target="_blank">Chatear por WhatsApp</a></p>
+    <p>📧 Email: tecnicoromero@gmail.com</p>
+  </section>
 </body>
 </html>
