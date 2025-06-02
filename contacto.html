@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto | Romero IT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
   <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  nav {
+    background: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  nav a {
+    color: #39ff14;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  nav a:hover {
+    background: #39ff14;
+    color: #000;
+    border-radius: 5px;
+  }
+  section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
     nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
+      flex-direction: column;
+      align-items: center;
     }
     nav a {
-      color: #39ff14;
-      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 15px;
     }
-    a.whatsapp {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
+  }
+  @media (max-width: 480px) {
+    nav a {
+      font-size: 16px;
     }
-  </style>
+    section h1, section h2 {
+      font-size: 22px;
+    }
+    section p, li {
+      font-size: 16px;
+    }
+  }
+</style>
 </head>
 <body>
+  <header>
+    <h1 style="text-align:center; color:#39ff14;">Romero IT</h1>
+  </header>
+  
   <nav>
     <a href="index.html">Inicio</a>
     <a href="quien-soy.html">Quién soy</a>
@@ -47,10 +78,12 @@
   </nav>
 
   <section>
-    <h2>Contacto</h2>
-    <p>📍 Corrientes Capital, Argentina</p>
-    <p>📞 WhatsApp: <a class="whatsapp" href="https://wa.me/5493794671403" target="_blank">Chatear por WhatsApp</a></p>
-    <p>📧 Email: tecnicoromero@gmail.com</p>
+    
+<h2>Contacto</h2>
+<p>📍 Corrientes Capital, Argentina</p>
+<p>📞 WhatsApp: <a class="whatsapp" href="https://wa.me/5493794671403" target="_blank">Chatear por WhatsApp</a></p>
+<p>📧 Email: tecnicoromero@gmail.com</p>
+
   </section>
 </body>
 </html>
