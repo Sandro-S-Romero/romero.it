@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Servicios | Romero IT</title>
   <style>
     body {
-      background-color: #000;
+      background: #000;
       color: #fff;
       font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+    section {
       padding: 20px;
-    }
-    h2 {
-      color: #39ff14;
-    }
-    h3 {
-      color: #39ff14;
+      max-width: 800px;
+      margin: auto;
     }
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     ul li::before {
       content: "✔️ ";
-      color: #39ff14;
-    }
-    a {
-      color: #39ff14;
-      text-decoration: none;
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Volver al inicio</a>
-  <h2>Servicios</h2>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quien-soy.html">Quién soy</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="promociones.html">Promociones</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
-  <h3>🖥️ PC de escritorio</h3>
-  <ul>
-    <li>Instalación de Windows y drivers</li>
-    <li>Instalación de Office y programas básicos</li>
-    <li>Mantenimiento, limpieza interna y externa</li>
-    <li>Clonado y cambio de disco duro</li>
-  </ul>
+  <section>
+    <h2>Servicios</h2>
+    <h3>🖥️ PC de escritorio</h3>
+    <ul>
+      <li>Instalación de Windows y drivers</li>
+      <li>Instalación de Office y programas básicos</li>
+      <li>Mantenimiento, limpieza interna y externa</li>
+      <li>Clonado y cambio de disco duro</li>
+    </ul>
 
-  <h3>💻 Notebooks</h3>
-  <ul>
-    <li>Reparación de bisagras</li>
-    <li>Desbloqueo de netbooks escolares</li>
-    <li>Optimización de rendimiento</li>
-    <li>Instalación de programas y actualizaciones</li>
-  </ul>
+    <h3>💻 Notebooks</h3>
+    <ul>
+      <li>Reparación de bisagras</li>
+      <li>Desbloqueo de netbooks escolares</li>
+      <li>Optimización de rendimiento</li>
+      <li>Instalación de programas y actualizaciones</li>
+    </ul>
+  </section>
 </body>
 </html>
